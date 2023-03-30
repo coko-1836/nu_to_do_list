@@ -1,0 +1,44 @@
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: #fff;
+    margin: 1em;
+    padding: 0;
+    letter-spacing: 0.05em;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0.5em 0;
+}
+
+table th {
+    padding: 10px;
+    background: #e9faf9;
+    border: solid 1px #778ca3;
+}
+
+table td {
+    padding: 10px;
+    border: solid 1px #778ca3;
+}
+table tr.finished{
+    text-decoration: line-through;
+    color : #aaa;
+}
+
+input[type="checkbox"] {
+    /* bigger */
+    transform: scale(1.5);
+    vertical-align: middle;
+}
+
+h2{
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ccc;
+}
