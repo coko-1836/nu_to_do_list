@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php 
-    //エラー処理
-    set_error_handler(function($errno, $errstr, $errfile, $errline){
-        throw new ErrorException($errstr, 0, $errno, $errfile, $errline);
-    });
+<?php
+//エラー処理
+set_error_handler(function ($errno, $errstr, $errfile, $errline) {
+    throw new ErrorException($errstr, 0, $errno, $errfile, $errline);
+});
 ?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,11 +35,14 @@
                 <th>詳細</th>
             </tr>
             <?php
+            //url from config
+            $config = file_get_contents("./config.json");
+            $config = json_decode($config, true);
             try {
-                $url = "https://script.google.com/macros/s/AKfycbwZ3ugl5klhzhkZS3n81kYix2kXnFkxxnzFMwKa7BTco374--35dEehTuVxnV_-4E5h/exec";
-                $json = file_get_contents($url);
+                $url = $config["nu-rigakubu"]["url"];
+                $apiJson = file_get_contents($url);
                 //json => array
-                $array = json_decode($json, true);
+                $array = json_decode($apiJson, true);
                 //array => html
                 for ($i = 0; $i < count($array); $i++) {
                     $a = htmlspecialchars($array[$i][0]);
@@ -70,6 +74,13 @@
                 <li>仕様上、保存されたデータが不正アクセス等を受ける可能性がないとは言い切れません。</li>
                 <li>多分大丈夫ですが、自己責任でお願いします。</li>
                 <li>また、キャッシュとかを削除すると多分消えます。</li>
+            </ul>
+            <p><b>ご質問などはgotoまで</b></p>
+        </div>
+        <div id="bugs">
+            <h2>既知の問題</h2>
+            <ul>
+                <li>LINEのブラウザでは正常に動作しません。Safari,Google Chorme,Firefoxなどをお使いください。</li>
             </ul>
             <p><b>ご質問などはgotoまで</b></p>
         </div>
