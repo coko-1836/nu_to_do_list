@@ -1,4 +1,4 @@
-![ver1.1.0](https://img.shields.io/badge/ver-1.1.0-blue)
+![ver1.1.1](https://img.shields.io/badge/ver-1.1.1-blue)
 ![GitHub Repo stars](https://img.shields.io/github/stars/coko-1836/nu_to_do_list?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/coko-1836/nu_to_do_list?style=social)
 ![Bitbucket open issues](https://img.shields.io/github/issues/coko-1836/nu_to_do_list)

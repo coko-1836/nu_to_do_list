@@ -16,7 +16,7 @@ set_error_handler(function ($errno, $errstr, $errfile, $errline) {
     <meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
     <title>NU 理学部 To Do リスト</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
@@ -82,8 +82,12 @@ set_error_handler(function ($errno, $errstr, $errfile, $errline) {
             <ul>
                 <li>LINEのブラウザでは正常に動作しません。Safari,Google Chorme,Firefoxなどをお使いください。</li>
             </ul>
-            <p><b>ご質問などはgotoまで</b></p>
         </div>
+        <div>
+            <p>Issueにあげてくれてもok</p>
+            <a href="https://github.com/coko-1836/nu_to_do_list"><img src="./img/github-mark/github-mark.svg" style="width: 25px; margin-right: 0.5em;" >Github</a>
+        </div>
+        <p><b>ご質問などはgotoまで</b></p>
     </main>
     <script src="./script/main.js" defer></script>
 </body>
