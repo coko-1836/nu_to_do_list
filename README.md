@@ -3,8 +3,8 @@
 to doリストのコード
 環境:php
 
-#簡単なシステム説明
+# 簡単なシステム説明
 
-1.Google SpreadSheetからデータを取得(APIで)
-2.phpでなんとなく処理
-3.なんとなくレンダリング
+1. Google SpreadSheetからデータを取得(APIで)
+2. phpでなんとなく処理
+3. なんとなくレンダリング
